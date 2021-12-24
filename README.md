@@ -1,7 +1,7 @@
 ### Welcome to my github page!
 
-please see [here](https://oura-hideyoshi.github.io/oura-hideyoshi/)
-
+please see [here(Home Page)](https://oura-hideyoshi.github.io/oura-hideyoshi/)
+----
 ### PROFILE
 
 WebApp開発エンジニアを目指す大学院生. 
