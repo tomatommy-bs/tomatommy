@@ -946,8 +946,9 @@
     <link as="script" rel="preload" href="/webpack-runtime-ea531586a0ac9a11096b.js" />
     <link as="script" rel="preload" href="/framework-0e7066d5261223205a79.js" />
     <link as="script" rel="preload" href="/app-7c01b31deda8bc2f6136.js" />
-    <link as="script" rel="preload" href="/component---src-pages-index-js-8036b3859102cdd7004f.js" />
-    <link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous" />
+    <link as="script" rel="preload" href="/cb1608f2-c8d5f31a09178f0b25b3.js" />
+    <link as="script" rel="preload" href="/component---src-pages-about-js-35f37c45f39038b43416.js" />
+    <link as="fetch" rel="preload" href="/page-data/about/page-data.json" crossorigin="anonymous" />
     <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
 </head>
 
@@ -962,8 +963,7 @@
                             class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none">とまとみ</a>
                         <nav
                             class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
-                            <a aria-current="page"
-                                class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
+                            <a class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
                                 x-data="{ hover: false }" href="/"><span class="block">Home</span></a><a
                                 class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
                                 x-data="{ hover: false }" href="/about"><span class="block">About</span></a><a
@@ -976,38 +976,67 @@
             </header>
             <div
                 class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
-                <div
-                    class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-                    <img src="https://illustkun.com/wp-content/uploads/illustkun-03200-tomato.png"
-                        class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 " />
-                </div>
-                <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
-                    <h2
-                        class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-                        とまとみ</h2>
-                    <p
-                        class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
-                        WebApp開発エンジニアを目指す大学院生. 大学の授業でWebAppに触れ,興味をもちプログラマへと足を進める.</p>
-                    <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
-                        <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid"><span
-                                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span
-                                    class="text-sm font-bold">✓</span></span> 成長意欲</li>
-                        <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid"><span
-                                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span
-                                    class="text-sm font-bold">✓</span></span> 共同開発</li>
-                        <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid"><span
-                                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span
-                                    class="text-sm font-bold">✓</span></span> 継続力</li>
-                    </ul>
+                <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
+                    <div class="flex flex-row-reverse md:contents">
+                        <div class=" col-start-1 col-end-5 rounded-xl my-4 ml-auto shadow-md">
+                            <div class="bg-blue-100 p-4 rounded-xl text-blue-500">
+                                <h3 class="font-semibold text-lg mb-1">2017/04</h3>
+                                <p class="leading-tight text-justify">神戸大学工学部情報知能工学科 入学</p>
+                            </div>
+                        </div>
+                        <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                            <div class="h-full w-6 flex items-center justify-center">
+                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row-reverse md:contents">
+                        <div class=" col-start-1 col-end-5 rounded-xl my-4 ml-auto shadow-md">
+                            <div class="bg-blue-100 p-4 rounded-xl text-blue-500">
+                                <h3 class="font-semibold text-lg mb-1">2020/04</h3>
+                                <p class="leading-tight text-justify"><a
+                                        class="font-bold bg-blue-200 hover:bg-blue-300 rounded-xl p-1"
+                                        href="https://www.lab.kobe-u.ac.jp/csi-applied-optics/index.html"><svg
+                                            aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="external-link-square-alt"
+                                            class="svg-inline--fa fa-external-link-square-alt fa-w-14 " role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-88 16H248.029c-21.313 0-32.08 25.861-16.971 40.971l31.984 31.987L67.515 364.485c-4.686 4.686-4.686 12.284 0 16.971l31.029 31.029c4.687 4.686 12.285 4.686 16.971 0l195.526-195.526 31.988 31.991C358.058 263.977 384 253.425 384 231.979V120c0-13.255-10.745-24-24-24z">
+                                            </path>
+                                        </svg>システム情報学研究科システム計測研究室</a>配属</p>
+                            </div>
+                        </div>
+                        <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                            <div class="h-full w-6 flex items-center justify-center">
+                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+                        </div>
+                    </div>
+                    <div class="flex md:contents">
+                        <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                            <div class="h-full w-6 flex items-center justify-center">
+                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+                        </div>
+                        <div class="col-start-6 col-end-10 rounded-xl my-4 mr-auto shadow-md">
+                            <div class="bg-blue-100 p-4 rounded-xl text-blue-500">
+                                <h3 class="font-semibold text-lg mb-1">2020/07</h3>
+                                <p class="leading-tight text-justify">深層学習を用いた2D画像変換</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer>
                 <section class="bg-white">
                     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
                         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
-                            <div class="px-5 py-2"><a aria-current="page"
-                                    class="text-base leading-6 text-gray-500 hover:text-gray-900" href="/">Home</a>
-                            </div>
+                            <div class="px-5 py-2"><a class="text-base leading-6 text-gray-500 hover:text-gray-900"
+                                    href="/">Home</a></div>
                             <div class="px-5 py-2"><a class="text-base leading-6 text-gray-500 hover:text-gray-900"
                                     href="/about">About</a></div>
                             <div class="px-5 py-2"><a class="text-base leading-6 text-gray-500 hover:text-gray-900"
@@ -1035,11 +1064,12 @@
             style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
             aria-live="assertive" aria-atomic="true"></div>
     </div>
-    <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/";/*]]>*/</script>
+    <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/about/";/*]]>*/</script>
     <script
         id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping = { "polyfill": ["/polyfill-5b319f40b2b765d17947.js"], "app": ["/app-7c01b31deda8bc2f6136.js"], "component---src-pages-404-js": ["/component---src-pages-404-js-fe5c57a350b82e8a4a59.js"], "component---src-pages-about-js": ["/component---src-pages-about-js-35f37c45f39038b43416.js"], "component---src-pages-index-js": ["/component---src-pages-index-js-8036b3859102cdd7004f.js"], "component---src-pages-products-js": ["/component---src-pages-products-js-cedff1708150f12bcbe9.js"] };/*]]>*/</script>
     <script src="/polyfill-5b319f40b2b765d17947.js" nomodule=""></script>
-    <script src="/component---src-pages-index-js-8036b3859102cdd7004f.js" async=""></script>
+    <script src="/component---src-pages-about-js-35f37c45f39038b43416.js" async=""></script>
+    <script src="/cb1608f2-c8d5f31a09178f0b25b3.js" async=""></script>
     <script src="/app-7c01b31deda8bc2f6136.js" async=""></script>
     <script src="/framework-0e7066d5261223205a79.js" async=""></script>
     <script src="/webpack-runtime-ea531586a0ac9a11096b.js" async=""></script>
