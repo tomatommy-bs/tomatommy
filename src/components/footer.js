@@ -4,9 +4,9 @@ import React from "react"
 export default () => {
 
     const navLinks = [
-        ["/", "Home"],
-        ["/about", "About"],
-        ["/products", "Products"],
+        ["https://oura-hideyoshi.github.io/oura-hideyoshi/", "Home"],
+        ["https://oura-hideyoshi.github.io/oura-hideyoshi/about", "About"],
+        ["https://oura-hideyoshi.github.io/oura-hideyoshi/products", "Products"],
     ];
 
     return (
