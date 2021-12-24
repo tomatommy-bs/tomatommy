@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default () => {
 
     const navLinks = [
-        ["https://oura-hideyoshi.github.io/oura-hideyoshi/", "Home"],
+        ["https://oura-hideyoshi.github.io/oura-hideyoshi/index", "Home"],
         ["https://oura-hideyoshi.github.io/oura-hideyoshi/about", "About"],
         ["https://oura-hideyoshi.github.io/oura-hideyoshi/products", "Products"],
     ];
