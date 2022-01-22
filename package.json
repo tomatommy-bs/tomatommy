@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "http-server ./build"
   },
   "eslintConfig": {
     "extends": [
