@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Pages from "./templates/index";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Router = () => {
 
@@ -10,16 +10,16 @@ const Router = () => {
     return (
         <>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <Routes>
-                    <Route path="/" element={<Pages.Top />} />
+                <Switch>
+                    <Route path="/" component={Pages.Top} />
                     {pageKeys.map(key => {
                         const Page = Pages[key];
                         return (
-                            <Route key={key} path={key} element={<Page />}>
+                            <Route key={key} path={key} component={Page}>
                             </Route>
                         )
                     })}
-                </Routes>
+                </Switch>
             </BrowserRouter>
         </>
     )
