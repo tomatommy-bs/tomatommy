@@ -3,8 +3,9 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
+  console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL);
   return (
-    <BrowserRouter basename='oura-hideyoshi'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />}>
         </Route>
