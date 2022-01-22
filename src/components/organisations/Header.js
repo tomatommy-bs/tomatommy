@@ -1,12 +1,30 @@
 import React from 'react';
-import { Box, Link, Stack, Typography } from '@mui/material';
+import { Box, Button, Link, Stack, Tab, Tabs, Typography } from '@mui/material';
 import { fullName } from "~/assets/properties/Name";
-import { githubHomePage, qiitaHomePage,twitterHomePage } from "~/assets/properties/URL";
+import { githubHomePage, qiitaHomePage, twitterHomePage } from "~/assets/properties/URL";
 import { ThemeColor } from "~/assets/Color";
-import qiita from "../../assets/static/img/qiita.png";
+import qiita from "~/assets/static/img/qiita.png";
 import { GitHub, Image, Twitter } from '@mui/icons-material';
+import { useHistory, Link as NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
+
+    const location = useLocation();
+    const isActive = (linkTo) => location.pathname == linkTo ? true : false;
+
+    const LinkTab = ({ linkTo }) =>
+        
+        <NavLink
+            to={"/" + linkTo}
+            style={{ textDecoration: "none" }}
+        >
+            <Button
+                sx={{ padding: "10px 20px" }}
+            >
+                {linkTo}
+            </Button>
+        </NavLink>
+
 
     return (
         <>
@@ -53,6 +71,18 @@ const Header = () => {
                                 width={"24px"}
                             ></img>
                         </Link>
+                    </Stack>
+                    <Stack
+                        direction={"row"}
+                        spacing={"10px"}
+                        sx={{
+                            position: "absolute",
+                            bottom: "10px",
+                            right: "0px"
+                        }}
+                    >
+                        <LinkTab linkTo={"top"}></LinkTab>
+                        <LinkTab linkTo={"about"}></LinkTab>
                     </Stack>
                 </Box>
             </Box>

@@ -11,11 +11,11 @@ const Router = () => {
         <>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
-                    <Route path="/" component={Pages.Top} />
+                    <Route exact path="/" component={Pages.Top} />
                     {pageKeys.map(key => {
                         const Page = Pages[key];
                         return (
-                            <Route key={key} path={key} component={Page}>
+                            <Route key={key} path={"/" + key} component={Page}>
                             </Route>
                         )
                     })}
