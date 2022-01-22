@@ -1,19 +1,16 @@
 import React from 'react';
-import { Box, Button, Link, Stack, Tab, Tabs, Typography } from '@mui/material';
-import { fullName } from "~/assets/properties/Name";
+import { Box, Button, Link, Stack, Typography } from '@mui/material';
+import { githubName } from "~/assets/properties/Name";
 import { githubHomePage, qiitaHomePage, twitterHomePage } from "~/assets/properties/URL";
 import { ThemeColor } from "~/assets/Color";
 import qiita from "~/assets/static/img/qiita.png";
-import { GitHub, Image, Twitter } from '@mui/icons-material';
-import { useHistory, Link as NavLink, useLocation } from "react-router-dom";
+import { GitHub, Twitter } from '@mui/icons-material';
+import { Link as NavLink } from "react-router-dom";
 
 const Header = () => {
 
-    const location = useLocation();
-    const isActive = (linkTo) => location.pathname == linkTo ? true : false;
-
     const LinkTab = ({ linkTo }) =>
-        
+
         <NavLink
             to={"/" + linkTo}
             style={{ textDecoration: "none" }}
@@ -42,7 +39,7 @@ const Header = () => {
                         top={"100px"}
                         fontSize={"2rem"}
                     >
-                        {fullName}
+                        {githubName}
                     </Typography>
                     <Stack
                         direction={'row'}
@@ -52,9 +49,8 @@ const Header = () => {
                         spacing={"10px"}>
                         <Link
                             href={twitterHomePage}
-                            color={ThemeColor.black}
                         >
-                            <Twitter></Twitter>
+                            <Twitter ></Twitter>
                         </Link>
                         <Link
                             href={githubHomePage}
