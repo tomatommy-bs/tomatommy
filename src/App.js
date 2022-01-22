@@ -1,18 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Router from './components/Router';
 
 function App() {
   console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<Home />}>
-        </Route>
-        <Route path="/about" element={<About />}>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Router></Router>
   );
 }
 
