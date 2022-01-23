@@ -5,7 +5,7 @@ import { githubHomePage, qiitaHomePage, twitterHomePage } from "~/assets/propert
 import { ThemeColor } from "~/assets/Color";
 import qiita from "~/assets/static/img/qiita.png";
 
-const Footer = () => {
+const Footer = ({sx}) => {
 
     return (
         <>
@@ -13,7 +13,7 @@ const Footer = () => {
                 component={"footer"}
                 position="fixed"
                 color="primary"
-                sx={{ top: 'auto', bottom: 0 }}
+                sx={{ top: 'auto', bottom: 0, ...sx }}
             >
                 <Container maxWidth="xl">
                     <Toolbar
