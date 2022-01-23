@@ -1,3 +1,3 @@
-const bussinessEmail = "tomatommy.bs@gmail.com";
+const businessEmail = "tomatommy.bs@gmail.com";
 
-export {bussinessEmail};
+export {businessEmail};
