@@ -1,10 +1,7 @@
 import React from 'react';
-import { Box, Button, Link, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 import { githubName } from "~/assets/properties/Name";
-import { githubHomePage, qiitaHomePage, twitterHomePage } from "~/assets/properties/URL";
-import { ThemeColor } from "~/assets/Color";
-import qiita from "~/assets/static/img/qiita.png";
-import { GitHub, Twitter } from '@mui/icons-material';
+import { AccountIcons } from "../molecules"
 import { Link as NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -41,33 +38,13 @@ const Header = () => {
                     >
                         {githubName}
                     </Typography>
-                    <Stack
-                        direction={'row'}
+                    <Box
                         top={"100px"}
                         right={"50px"}
-                        position={"absolute"}
-                        spacing={"10px"}>
-                        <Link
-                            href={twitterHomePage}
-                        >
-                            <Twitter ></Twitter>
-                        </Link>
-                        <Link
-                            href={githubHomePage}
-                            color={ThemeColor.black}
-                        >
-                            <GitHub></GitHub>
-                        </Link>
-                        <Link
-                            href={qiitaHomePage}
-                            color={ThemeColor.black}
-                        >
-                            <img
-                                src={qiita}
-                                width={"24px"}
-                            ></img>
-                        </Link>
-                    </Stack>
+                        position={"absolute"}>
+                        <AccountIcons />
+                    </Box>
+
                     <Stack
                         direction={"row"}
                         spacing={"10px"}

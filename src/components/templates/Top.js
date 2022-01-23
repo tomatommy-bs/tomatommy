@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../organisations/Layout';
 import { Heading } from '../atoms';
+import { AccountIcons } from '../molecules';
 import profileLogo512 from "~/assets/static/img/profile-logo512.png";
 import { Colors, ThemeColor } from "~/assets/Color";
 import { Container, Box, Typography, Stack, Grid, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
@@ -77,6 +78,7 @@ const Top = () => {
                                 src={profileLogo512}
                                 width={"50%"}
                             ></img>
+                            <AccountIcons />
                         </Grid>
                         <Grid item sm={6} xs={12}>
                             <Typography variant='body1'>
@@ -85,23 +87,23 @@ const Top = () => {
                                 広い視点でものを見ることを常に念頭に置く。
                             </Typography>
                             <List>
-                                {slogan.map(item=>
+                                {slogan.map(item =>
                                     <ListItem >
-                                    <ListItemIcon>
-                                        <CheckCircleOutlineOutlined
-                                            htmlColor={ThemeColor.accentColor}
-                                        />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <Typography
-                                            variant='body1'
-                                            fontWeight={"bold"}
-                                        >
-                                            {item}
-                                        </Typography>
-                                    </ListItemText>
-                                </ListItem>
-                                    )}
+                                        <ListItemIcon>
+                                            <CheckCircleOutlineOutlined
+                                                htmlColor={ThemeColor.accentColor}
+                                            />
+                                        </ListItemIcon>
+                                        <ListItemText>
+                                            <Typography
+                                                variant='body1'
+                                                fontWeight={"bold"}
+                                            >
+                                                {item}
+                                            </Typography>
+                                        </ListItemText>
+                                    </ListItem>
+                                )}
                             </List>
                         </Grid>
                     </Grid>
