@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/oura-hideyoshi/static/js/main.99ec3d81.js",
+    "main.js": "/oura-hideyoshi/static/js/main.ed1000d9.js",
     "static/js/787.e02832f4.chunk.js": "/oura-hideyoshi/static/js/787.e02832f4.chunk.js",
+    "static/media/profile-logo512.png": "/oura-hideyoshi/static/media/profile-logo512.8aeb14bcad2a65807b51.png",
     "index.html": "/oura-hideyoshi/index.html",
-    "main.99ec3d81.js.map": "/oura-hideyoshi/static/js/main.99ec3d81.js.map",
+    "main.ed1000d9.js.map": "/oura-hideyoshi/static/js/main.ed1000d9.js.map",
     "787.e02832f4.chunk.js.map": "/oura-hideyoshi/static/js/787.e02832f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.99ec3d81.js"
+    "static/js/main.ed1000d9.js"
   ]
 }
