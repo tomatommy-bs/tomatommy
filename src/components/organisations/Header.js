@@ -1,64 +1,53 @@
 import React from 'react';
-import { Box, Button, Stack, Typography } from '@mui/material';
+import { AppBar, Box, Button, Container, Link, Stack, Typography } from '@mui/material';
 import { githubName } from "~/assets/properties/Name";
-import { AccountIcons } from "../molecules"
-import { Link as NavLink } from "react-router-dom";
+import { ThemeColor } from "~/assets/Color";
+import profileLogo128  from "~/assets/static/img/profile-logo128.png";
 
 const Header = () => {
 
-    const LinkTab = ({ linkTo }) =>
+    const LinkTab = ({ href, children }) =>
 
-        <NavLink
-            to={"/" + linkTo}
-            style={{ textDecoration: "none" }}
-        >
-            <Button
-                sx={{ padding: "10px 20px" }}
+        <Button>
+            <Link
+                href={href}
+                underline="none"
+                color={ThemeColor.mainTextColor}
             >
-                {linkTo}
-            </Button>
-        </NavLink>
-
+                {children}
+            </Link>
+        </Button>
 
     return (
         <>
-            <Box
-                component={"header"}>
-                <Box
-                    height={"270px"}
-                    maxWidth={"960px"}
-                    margin={"0 auto"}
-                    position={"relative"}
-                >
+            <AppBar
+                position="fixed"
+                sx={{
+                    backgroundColor: "#ffffffa6",
+                    boxShadow: "none",
+                    padding: "20px"
+                }}
+            >
+                <Container maxWidth="xl">
+                    <img></img>
                     <Typography
-                        variant='h1'
-                        position={"absolute"}
-                        top={"100px"}
-                        fontSize={"2rem"}
+                        variant="h6"
+                        noWrap
+                        component="div"
+                        color={ThemeColor.mainTextColor}
+                        display={"inline"}
                     >
                         {githubName}
                     </Typography>
-                    <Box
-                        top={"100px"}
-                        right={"50px"}
-                        position={"absolute"}>
-                        <AccountIcons />
-                    </Box>
+                    <LinkTab href="#top">
+                        Top
+                    </LinkTab>
+                    <LinkTab href="#about-me">
+                        About Me
+                    </LinkTab>
 
-                    <Stack
-                        direction={"row"}
-                        spacing={"10px"}
-                        sx={{
-                            position: "absolute",
-                            bottom: "10px",
-                            right: "0px"
-                        }}
-                    >
-                        <LinkTab linkTo={"top"}></LinkTab>
-                        <LinkTab linkTo={"about"}></LinkTab>
-                    </Stack>
-                </Box>
-            </Box>
+                </Container>
+            </AppBar>
         </>
     )
 }

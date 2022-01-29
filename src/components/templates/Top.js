@@ -16,6 +16,7 @@ const Top = () => {
                     return (
                         <>
                             <Stack
+                                id={child.props.id}
                                 key={idx}
                                 direction={"row"}
                                 alignItems={"center"}
@@ -115,8 +116,8 @@ const Top = () => {
     return (
         <Layout>
             <Back>
-                <AboutThisPage />
-                <AboutMe />
+                <AboutThisPage id="top"/>
+                <AboutMe id="about-me"/>
             </Back>
         </Layout>
     )
