@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
         <>
             <Header />
             {children}
-            <Box height={"64px"}></Box>
             <Footer />
         </>
     )

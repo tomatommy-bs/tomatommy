@@ -113,11 +113,48 @@ const Top = () => {
         )
     }
 
+    const Skills = () => {
+        return (
+            <Container
+                maxWidth={"md"}
+            >
+                <Heading>
+                    Skills
+                </Heading>
+                <Typography
+                    variant={"body1"}
+                    textAlign={"center"}
+                >
+                    editting now ...
+                </Typography>
+            </Container>
+        )
+    }
+    const Products = () => {
+        return (
+            <Container
+                maxWidth={"md"}
+            >
+                <Heading>
+                    Products
+                </Heading>
+                <Typography
+                    variant={"body1"}
+                    textAlign={"center"}
+                >
+                    editting now ...
+                </Typography>
+            </Container>
+        )
+    }
+
     return (
         <Layout>
             <Back>
-                <AboutThisPage id="top"/>
-                <AboutMe id="about-me"/>
+                <AboutThisPage id="top" />
+                <AboutMe id="about-me" />
+                <Skills id="skills" />
+                <Products id="products" />
             </Back>
         </Layout>
     )
