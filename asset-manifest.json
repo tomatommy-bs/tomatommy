@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/oura-hideyoshi/static/css/main.ac0a16c7.css",
+    "main.css": "/oura-hideyoshi/static/css/main.3e342788.css",
     "main.js": "/oura-hideyoshi/static/js/main.76be13eb.js",
     "static/js/787.e02832f4.chunk.js": "/oura-hideyoshi/static/js/787.e02832f4.chunk.js",
     "static/media/profile-logo512.png": "/oura-hideyoshi/static/media/profile-logo512.8aeb14bcad2a65807b51.png",
     "index.html": "/oura-hideyoshi/index.html",
-    "main.ac0a16c7.css.map": "/oura-hideyoshi/static/css/main.ac0a16c7.css.map",
+    "main.3e342788.css.map": "/oura-hideyoshi/static/css/main.3e342788.css.map",
     "main.76be13eb.js.map": "/oura-hideyoshi/static/js/main.76be13eb.js.map",
     "787.e02832f4.chunk.js.map": "/oura-hideyoshi/static/js/787.e02832f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac0a16c7.css",
+    "static/css/main.3e342788.css",
     "static/js/main.76be13eb.js"
   ]
 }
