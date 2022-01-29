@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Router from './components/Router';
+import "./normalize.css";
 
 function App() {
   console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL);
