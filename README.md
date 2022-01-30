@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+### Welcome to my github page!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+please see [here(Home Page)](https://oura-hideyoshi.github.io/oura-hideyoshi/)
+----
+### PROFILE
 
-## Available Scripts
+WebApp開発エンジニアを目指す大学院生. 
+大学の授業でWebAppに触れ,興味をもちプログラマへと足を進める.
 
-In the project directory, you can run:
+趣味は音楽で、現在趣味で「Mchord」の作成中.
 
-### `npm start`
+React.jsが難しいので誰か質問させてください...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+AtCoder水色目指して頑張りたい
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+----
+信念は**視野を広く保つ**こと
 
-### `npm test`
+どんなことにも、多様な視点による考え方を忘れないようにしたい
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### PRODUCTS
 
-### `npm run build`
+- 2Dオートエンコーダの実装
+- 3Dオートエンコーダの実装
+- 教習所予約システムのスクレイピング
+- モイ！SANTA QUEST！
+- Mchord(開発中)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### SKILLS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Lang | Library & Packege | 理解度 | 経験値 | 備考 |
+| --- | --- | --- | --- | --- |
+| C |  | ☆☆ | ☆☆ |
+| Java | SpringBoot + Thymeleaf | ☆☆☆ | ☆☆☆☆ | モイ！SANTA QUEST！|
+| Python3 | Tensorflow,Keras,selenium,openCV,Flask | ☆☆☆ | ☆☆☆ | オートエンコーダの実装(2D・3D),教習所予約システムスクレイピング |
+| JavaScript | | ☆☆☆ | ☆☆☆ | |
+| TypeScript | React.js,Gatsby.js| ☆☆☆ | ☆☆☆ | Mchord |
+| SQL | MySQL,SQlite | ☆☆ | ☆☆☆ | |
