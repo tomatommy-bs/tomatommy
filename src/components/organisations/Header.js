@@ -28,11 +28,12 @@ const Header = () => {
                     smooth={true}
                     offset={0}
                     duration={10}
-                    style={{color:ThemeColor.mainTextColor}}
+                    style={{ color: ThemeColor.mainTextColor }}
+                    onClick={() => document.querySelector('#' + to).scrollIntoView({ behavior: 'smooth' })}
                 >
                     {children}
                 </Link>
-            </Button>
+            </Button >
         )
     }
 
