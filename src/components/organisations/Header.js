@@ -1,27 +1,34 @@
 import React from 'react';
-import { AppBar, Box, Button, Container, Drawer, Link, List, ListItem, ListItemText, Stack, Typography } from '@mui/material';
+import { Link, animateScroll as scroll } from "react-scroll";
+import { AppBar, Box, Button, Container, Drawer, List, ListItem, ListItemText, Stack, Typography } from '@mui/material';
 import { githubName } from "~/assets/properties/Name";
 import { ThemeColor } from "~/assets/Color";
 import profileLogo128 from "~/assets/static/img/profile-logo128.png";
 import { Menu as IconMenu } from '@mui/icons-material';
+import "./Header.css";
 
 const Header = () => {
 
     const links = [
-        { href: "#top", content: "Top" },
-        { href: "#about-me", content: "About me" },
-        { href: "#skills", content: "Skills" },
-        { href: "#products", content: "Products" },
+        { to: "top", content: "Top" },
+        { to: "about-me", content: "About me" },
+        { to: "skills", content: "Skills" },
+        { to: "products", content: "Products" },
     ]
 
-    const LinkTab = ({ href, children }) => {
+    const LinkTab = ({ to, children }) => {
 
         return (
             <Button>
                 <Link
-                    href={href}
-                    underline="none"
-                    color={ThemeColor.mainTextColor}
+                    className="page-link"
+                    activeClass="active"
+                    to={to}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={10}
+                    style={{color:ThemeColor.mainTextColor}}
                 >
                     {children}
                 </Link>
@@ -48,8 +55,8 @@ const Header = () => {
                     >
                         <List>
                             {links.map((link) => (
-                                <ListItem key={link.href}>
-                                    <LinkTab href={link.href}>
+                                <ListItem key={link.to}>
+                                    <LinkTab to={link.to}>
                                         {link.content}
                                     </LinkTab>
                                 </ListItem>
@@ -101,7 +108,7 @@ const Header = () => {
                             sx={{ display: { xs: "none", sm: "inline-block" } }}
                         >
                             {links.map((link) =>
-                                <LinkTab key={link.href} href={link.href}>
+                                <LinkTab key={link.to} to={link.to}>
                                     {link.content}
                                 </LinkTab>
                             )}
