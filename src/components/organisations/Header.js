@@ -19,8 +19,8 @@ const Header = () => {
     const LinkTab = ({ to, children }) => {
 
         return (
-            <Button>
-                <Link
+            <Button onClick={() => document.querySelector('#' + to).scrollIntoView({ behavior: 'smooth' })}>
+                {/* <Link
                     className="page-link"
                     activeClass="active"
                     to={to}
@@ -30,9 +30,9 @@ const Header = () => {
                     duration={10}
                     style={{ color: ThemeColor.mainTextColor }}
                     onClick={() => document.querySelector('#' + to).scrollIntoView({ behavior: 'smooth' })}
-                >
-                    {children}
-                </Link>
+                > */}
+                {children}
+                {/* </Link> */}
             </Button >
         )
     }

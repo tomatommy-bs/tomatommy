@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../organisations/Layout';
+import * as ProductsContents from "../organisations/products/index";
 import { Heading } from '../atoms';
 import { AccountIcons } from '../molecules';
 import profileLogo512 from "~/assets/static/img/profile-logo512.png";
 import { Colors, ThemeColor } from "~/assets/Color";
-import { Container, Box, Typography, Stack, Grid, List, ListItem, ListItemIcon, ListItemText, Card, CardMedia, CardContent, Button, CardActions } from "@mui/material";
+import { Container, Box, Typography, Stack, Grid, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { CheckCircleOutlineOutlined } from '@mui/icons-material';
 
 const Top = () => {
@@ -14,18 +15,16 @@ const Top = () => {
             <>
                 {children.map((child, idx) => {
                     return (
-                        <>
-                            <Stack
-                                id={child.props.id}
-                                key={idx}
-                                direction={"row"}
-                                alignItems={"center"}
-                                bgcolor={idx % 2 == 0 ? ThemeColor.mainBgColor : Colors.white}
-                                minHeight={"max(400px, 100vh)"}
-                                padding={"20px 0px"}>
-                                {child}
-                            </Stack>
-                        </>
+                        <Stack
+                            id={child.props.id}
+                            key={idx}
+                            direction={"row"}
+                            alignItems={"center"}
+                            bgcolor={idx % 2 == 0 ? ThemeColor.mainBgColor : Colors.white}
+                            minHeight={"max(400px, 100vh)"}
+                            padding={"20px 0px"}>
+                            {child}
+                        </Stack>
                     )
                 })}
             </>
@@ -88,8 +87,8 @@ const Top = () => {
                                 広い視点でものを見ることを常に念頭に置く。
                             </Typography>
                             <List>
-                                {slogan.map(item =>
-                                    <ListItem >
+                                {slogan.map((item, idx) =>
+                                    <ListItem key={idx} >
                                         <ListItemIcon>
                                             <CheckCircleOutlineOutlined
                                                 htmlColor={ThemeColor.accentColor}
@@ -131,6 +130,7 @@ const Top = () => {
         )
     }
     const Products = () => {
+        const productKeys = Object.keys(ProductsContents);
         return (
             <Container
                 maxWidth={"md"}
@@ -138,27 +138,16 @@ const Top = () => {
                 <Heading>
                     Products
                 </Heading>
-                <Card sx={{ maxWidth: 345 }}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={profileLogo512}
-                        alt="green iguana"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Lizard
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Button size="small">Share</Button>
-                        <Button size="small">Learn More</Button>
-                    </CardActions>
-                </Card>
+                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    {productKeys.map((key) => {
+                        const Content = ProductsContents[key];
+                        return (
+                            <Grid item xs={4} sm={4} md={4} key={key}>
+                                <Content />
+                            </Grid>
+                        )
+                    })}
+                </Grid>
             </Container>
         )
     }
