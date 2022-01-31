@@ -2,10 +2,11 @@ import React from 'react';
 import Layout from '../organisations/Layout';
 import * as ProductsContents from "../organisations/products/index";
 import { Heading } from '../atoms';
+import { githubHomePage } from "~/assets/properties/URL";
 import { AccountIcons } from '../molecules';
 import profileLogo512 from "~/assets/static/img/profile-logo512.png";
 import { Colors, ThemeColor } from "~/assets/Color";
-import { Container, Box, Typography, Stack, Grid, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
+import { Container, Box, Typography, Stack, Grid, List, ListItem, ListItemIcon, ListItemText, Link } from "@mui/material";
 import { CheckCircleOutlineOutlined } from '@mui/icons-material';
 
 const Top = () => {
@@ -46,7 +47,7 @@ const Top = () => {
                         variant='body1'
                         textAlign={"center"}
                     >
-                        エンジニア 'とまとみ' のポートフォリオサイトです。
+                        エンジニア 大浦秀喜(<Link href={githubHomePage} target={"_blank"}>@oura-hideyoshi</Link>) のポートフォリオサイトです。
                         まだまだ駆け出しエンジニアですが、これまでに手がけた制作物、身につけたスキルをまとめています。
                         これからどんどんと充実させていきますので、度々訪問してください。
                     </Typography>
@@ -82,8 +83,9 @@ const Top = () => {
                         </Grid>
                         <Grid item sm={6} xs={12}>
                             <Typography variant='body1'>
-                                奈良出身。 現在は神戸大学院所属。
-                                プログラミングが大好きで、興味をもったものはとにかく勉強。
+                                奈良出身。 現在は神戸大学院所属。<br />
+                                大学時代からプログラミングを勉強し始め、大学院時代からWebApp開発に触れる。<br />
+                                PythonとReact.jsが好き。目指せフルスタックエンジニア<br />
                                 広い視点でものを見ることを常に念頭に置く。
                             </Typography>
                             <List>

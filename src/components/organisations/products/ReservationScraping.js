@@ -3,7 +3,7 @@ import Card from './components/Card';
 import TechInfo from "./components/TechInfo";
 import ProductDiagram from "./components/ProductDiagram";
 import { Button, Tooltip, IconButton, Grid, Typography } from '@mui/material';
-import { Close, GitHub, Link, Videocam } from '@mui/icons-material';
+import { GitHub } from '@mui/icons-material';
 
 const ReservationScraping = () => {
 
@@ -48,7 +48,7 @@ const ReservationScraping = () => {
 
             const contents = [
                 { label: "使用技術", content: "Python, celenium, LINENotifyAPI" },
-                { label: "開発期間", content: <>期間 : 半年<br />人数 : 1人</> },
+                { label: "開発期間", content: <>期間 : 2週間<br />人数 : 1人</> },
                 { label: "リリース", content: <>期間 : 2021/06 ~<br />利用人数 : 3人</> },
             ]
             return (

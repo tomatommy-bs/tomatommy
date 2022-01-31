@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Card from './components/Card';
 import ProductDiagram from "./components/ProductDiagram";
 import TechInfo from './components/TechInfo';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Tooltip, Typography, Grid, Box, Tabs, Tab, Stack, Divider, Container } from "@mui/material";
+import { Button, IconButton, Tooltip, Typography, Grid } from "@mui/material";
 import santaquestLogo from "~/assets/static/img/santaquest.png";
-import { Close, GitHub, Link, Videocam } from '@mui/icons-material';
+import { GitHub, Link, Videocam } from '@mui/icons-material';
 
 const SantaQuest = () => {
 
@@ -42,7 +42,7 @@ const SantaQuest = () => {
         const Tech = () => {
 
             const contents = [
-                { label: "使用技術", content: <Typography>GitHub, SpringBoot+Thymeleaf, Tomcat, HTML, CSS, JS, MySQL, Apache</Typography> },
+                { label: "使用技術", content: "GitHub, SpringBoot+Thymeleaf, Tomcat, HTML, CSS, JS, MySQL, Apache" },
                 { label: "開発期間", content: <>期間 : 半年<br />人数 : 6人</> },
                 { label: "リリース", content: <>期間 : 2021/12/01 ~ (遊べる期間は 2022/01/31)<br />利用者数 : 約300人</> },
                 { label: "担当", content: "フロントエンド＆バックエンド" }
