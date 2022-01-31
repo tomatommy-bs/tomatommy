@@ -10,14 +10,12 @@ const ReservationScraping = () => {
             <Card
                 title={"スクレイピングシステム"}
                 content={"教習所予約システムをスクレイピングし,空き枠があればLINEへ通知するシステム.どこの教習所かは秘密"}
-                // img={profileLogo512}
                 actions={
                     <>
                         <Button>DETAIL</Button>
                     </>
                 }
             >
-
             </Card>
         </>
     )
