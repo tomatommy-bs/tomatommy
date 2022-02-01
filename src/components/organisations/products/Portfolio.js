@@ -2,9 +2,10 @@ import React from 'react';
 import Card from './components/Card';
 import TechInfo from "./components/TechInfo";
 import ProductDiagram from "./components/ProductDiagram";
-import { Button, Tooltip, IconButton, Grid, Typography } from '@mui/material';
+import { Button, Tooltip, IconButton, Grid, Typography, Box, Stack } from '@mui/material';
 import { Close, GitHub, Link, Videocam } from '@mui/icons-material';
 import profileLogo512 from "~/assets/static/img/profile-logo512.png";
+import { ReactLogo, NodeLogo, MuiLogo, GithubLogo } from "~/assets/Logo";
 
 const Portfolio = () => {
 
@@ -49,7 +50,12 @@ const Portfolio = () => {
         const Tech = () => {
 
             const contents = [
-                { label: "使用技術", content: "Node.js, React.js, GitHub, Material-UI" },
+                {
+                    label: "使用技術", content:
+                        <Box>
+                            <Stack spacing={2} direction={"row"}><ReactLogo /><NodeLogo /><GithubLogo /><MuiLogo /></Stack>
+                        </Box>
+                },
                 { label: "開発期間", content: <>期間 : 2週間 ~<br />人数 : 1人</> }
             ]
 

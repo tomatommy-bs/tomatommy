@@ -2,7 +2,8 @@ import React from 'react';
 import Card from './components/Card';
 import TechInfo from "./components/TechInfo";
 import ProductDiagram from "./components/ProductDiagram";
-import { Button, Tooltip, IconButton, Grid, Typography } from '@mui/material';
+import { Button, Tooltip, IconButton, Grid, Typography, Box, Stack } from '@mui/material';
+import { NodeLogo, ReactLogo, MuiLogo, HerokuLogo } from "~/assets/Logo";
 import { GitHub, Videocam } from '@mui/icons-material';
 
 const MChord = () => {
@@ -53,7 +54,12 @@ const MChord = () => {
         const Tech = () => {
 
             const contents = [
-                { label: "使用技術", content: "Node.js, React, Heroku, Material-UI, TonalJS" },
+                {
+                    label: "使用技術", content:
+                        <Box>
+                            <Stack direction="row" spacing={2}><NodeLogo /> <ReactLogo /> <HerokuLogo /><MuiLogo />TonalJS</Stack>
+                        </Box>
+                },
                 { label: "開発期間", content: <>期間 : 2か月 ~<br />人数 : 1人</> },
             ]
             return (
