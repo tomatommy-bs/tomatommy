@@ -51,6 +51,72 @@ const MChord = () => {
                 </Grid>
             </Grid>
 
+        const Requirement = () => {
+            const contents = [
+                {
+                    label: "問題", content:
+                        <Typography>
+                            <ul>
+                                <li>音楽コードをスマホで打つ際、記号・数字・英字が混ざるため、非常に打ちづらい。また、PCであっても快適性は低い。</li>
+                                <li>テキストで打たれたコードは横並びで見にくい</li>
+                                <li>入力したコードを編集する際、スマホでは編集がしづらい</li>
+                                <li>あるコード進行が、実は度数が異なる既知のコード進行であることに気づきにくい</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "要件", content:
+                        <Typography>
+                            <ul>
+                                <li>利用者が快適にコード入力ができること</li>
+                                <ul>
+                                    <li>利用者が、スマホから簡単に音楽コードを入力できること</li>
+                                    <li>入力されたコードは形状・色を工夫して見やすいものであること</li>
+                                    <li>一度入力されたコードは楽に編集が行えること</li>
+                                </ul>
+                                <li>コード進行において、コード間の関係を視覚化すること</li>
+                                <ul>
+                                    <li>異なる進行でも、度数の視点で同じであることがわかること</li>
+                                </ul>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "ターゲット", content:
+                        <Typography>
+                            <ul>
+                                <li>音楽理論を勉強し始め、まだ未熟なもの</li>
+                                <li>コード進行を書き留めたいもの</li>
+                                <li>コード進行の図を誰かに伝えたいもの</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "解決方針", content:
+                        <Typography>
+                            <ul>
+                                <li>テキスト入力ではなく、ボタンのクリックやDaDといった操作で入力・編集が行えるようにする</li>
+                                <li>入力されたコードをノードとし、フローチャート風に表示する</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "実装", content:
+                        <>
+                            <Typography gutterBottom>
+                                Reactを用いてフロントだけで完結させる。ネイティブアプリの方が適するかもしれないが、Reactで作ってみる。場合によってはReactNativeへと移行する。
+                            </Typography>
+                            <Typography gutterBottom>
+                                Reactライブラリを用いてフローチャートを実現させる
+                            </Typography>
+                        </>
+                },
+            ];
+            return (
+                <Columns contents={contents} />
+            )
+        }
+
         const Tech = () => {
 
             const contents = [
@@ -69,6 +135,7 @@ const MChord = () => {
 
         const contents = [
             { label: "ABSTRACT", content: <Abstract /> },
+            { label: "RECUIREMENT", content: <Requirement /> },
             { label: "TECHS", content: <Tech /> }
         ]
 

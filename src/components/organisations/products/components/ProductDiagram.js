@@ -34,7 +34,6 @@ const ProductDiagram = ({ title, contents, actions, onClose, open }) => {
         <Dialog onClose={onClose} open={open} maxWidth={"lg"} fullWidth>
             <DialogTitle>
                 <Typography
-                    variant={"h3"}
                     fontSize={"1.5rem"}
                 >
                     {title}

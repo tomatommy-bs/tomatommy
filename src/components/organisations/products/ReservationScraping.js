@@ -45,6 +45,53 @@ const ReservationScraping = () => {
                 </Grid>
             </Grid>
 
+        const Requirement = () => {
+            const contents = [
+                {
+                    label: "問題", content:
+                        <Typography>
+                            <ul>
+                                <li>教習所の予約は常に混んでおり、空いてもすぐに埋まってしまう</li>
+                                <li>予約可能枠ができたことを知る方法はHPを確認し、手動で更新ボタンを押すしかない</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "要件", content:
+                        <Typography>
+                            <ul>
+                                <li>利用者が、予約システムをずっと監視する時間をなくす・軽減すること</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "ターゲット", content:
+                        <Typography>
+                            <ol>
+                                <li>教習所に通っている者(なんとか権的に、私の身の回りの者のみ)</li>
+                            </ol>
+                        </Typography>
+                },
+                {
+                    label: "解決方針", content:
+                        <Typography>
+                            <ul>
+                                <li>予約可能枠ができたことを、利用者が所持する端末に可能な限り早く知らせる</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "実装", content:
+                        <Typography>
+                            Pythonのライブラリ、celeniumを用いて予約システムをスクレイピングし、空き枠を検知すると利用者のLINEへと通知を送る。通知にはLINENotifyAPIを用いる。
+                        </Typography>
+                },
+            ];
+            return (
+                <Columns contents={contents} />
+            )
+        }
+
         const Tech = () => {
 
             const contents = [
@@ -64,6 +111,7 @@ const ReservationScraping = () => {
 
         const contents = [
             { label: "ABSTRACT", content: <Abstract /> },
+            { label: "REQUIREMENT", content: <Requirement /> },
             { label: "TECHS", content: <Tech /> }
         ]
 

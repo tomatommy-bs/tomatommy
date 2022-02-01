@@ -45,6 +45,7 @@ const SantaQuest = () => {
                     </Typography>
                 </Grid>
             </Grid>
+
         const Requirement = () => {
 
             const contents = [
@@ -53,16 +54,18 @@ const SantaQuest = () => {
                         <Typography>
                             <ul>
                                 <li>三田市には魅力的なスポットがあるのに住民がそれに気づけていない</li>
+                                <li>運営を行うのは市役所の方々なので、HTMLを直接編集するなどといったことはできない</li>
                             </ul>
                         </Typography>
                 },
                 {
-                    label: "目的", content:
+                    label: "要件", content:
                         <Typography>
                             <ul>
                                 <li>ターゲットが三田市の魅力に気づけること</li>
                                 <li>ターゲットが三田市に住みたいと感じること</li>
-                                <li>サンタ×三田プロジェクトと関係を持てるサービス</li>
+                                <li>サンタ×三田プロジェクトを例年より盛り上げること</li>
+                                <li>管理者が簡単に操作できるような管理者画面であること</li>
                             </ul>
                         </Typography>
                 },
@@ -91,9 +94,14 @@ const SantaQuest = () => {
                 },
                 {
                     label: "実装", content:
-                        <Typography>
-                            GPSを利用し、ユーザーが現地に訪れるとポイントを獲得できる。そのポイントをたまることで、景品に応募することができる。
-                        </Typography>
+                        <>
+                            <Typography gutterBottom>
+                                GPSを利用し、ユーザーが現地に訪れるとポイントを獲得できる。そのポイントをたまることで、景品に応募することができる。見た目はクリスマス仕様で統一し、利用者に三田市とクリスマスのイメージを結びつける。
+                            </Typography>
+                            <Typography gutterBottom>
+                                管理者画面を用意し、管理者である三田市役所の方が操作することでゲームのマップを作成できるようにする。
+                            </Typography>
+                        </>
                 }
             ]
 
