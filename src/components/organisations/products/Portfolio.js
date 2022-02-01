@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './components/Card';
-import TechInfo from "./components/TechInfo";
+import Columns from "./components/Columns";
 import ProductDiagram from "./components/ProductDiagram";
 import { Button, Tooltip, IconButton, Grid, Typography, Box, Stack } from '@mui/material';
 import { Close, GitHub, Link, Videocam } from '@mui/icons-material';
@@ -52,15 +52,15 @@ const Portfolio = () => {
             const contents = [
                 {
                     label: "使用技術", content:
-                        <Box>
-                            <Stack spacing={2} direction={"row"}><ReactLogo /><NodeLogo /><GithubLogo /><MuiLogo /></Stack>
+                        <Box display="flex" flexWrap={'wrap'}>
+                            <ReactLogo /><NodeLogo /><GithubLogo /><MuiLogo />
                         </Box>
                 },
                 { label: "開発期間", content: <>期間 : 2週間 ~<br />人数 : 1人</> }
             ]
 
             return (
-                < TechInfo contents={contents} />
+                < Columns contents={contents} />
             )
         }
 

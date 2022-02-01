@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Card from './components/Card';
 import ProductDiagram from "./components/ProductDiagram";
-import TechInfo from './components/TechInfo';
+import Columns from './components/Columns';
 import { Button, IconButton, Tooltip, Typography, Grid, Box, Stack } from "@mui/material";
 import santaquestLogo from "~/assets/static/img/santaquest.png";
 import { GithubLogo, JavaLogo, SpringbootLogo, HtmlLogo, CssLogo, MysqlLogo } from "~/assets/Logo";
@@ -29,6 +29,12 @@ const SantaQuest = () => {
                         variant={"body1"}
                         gutterBottom
                     >
+                        実際に現地を訪れることでポイントがたまるクイズラリーアプリ。
+                    </Typography>
+                    <Typography
+                        variant={"body1"}
+                        gutterBottom
+                    >
                         大学院の授業として、兵庫県三田市様よりクリスマスイベント用のWebAppの作成を受託し、約半年かけて６人のチームで開発
                     </Typography>
                     <Typography
@@ -39,14 +45,69 @@ const SantaQuest = () => {
                     </Typography>
                 </Grid>
             </Grid>
+        const Requirement = () => {
+
+            const contents = [
+                {
+                    label: "問題", content:
+                        <Typography>
+                            <ul>
+                                <li>三田市には魅力的なスポットがあるのに住民がそれに気づけていない</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "目的", content:
+                        <Typography>
+                            <ul>
+                                <li>ターゲットが三田市の魅力に気づけること</li>
+                                <li>ターゲットが三田市に住みたいと感じること</li>
+                                <li>サンタ×三田プロジェクトと関係を持てるサービス</li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "ターゲット", content:
+                        <Typography>
+                            <ol>
+                                <li>三田市民の若年層(~18)</li>
+                                <li>三田市民の成人</li>
+                                <li>三田市外の人々</li>
+                            </ol>
+                        </Typography>
+                },
+                {
+                    label: "解決方針", content:
+                        <Typography>
+                            <ul>
+                                <li>
+                                    三田市の各観光スポットに実際に足を運ぶきっかけを作る
+                                </li>
+                                <li>
+                                    特に若年層に魅力を知ってもらいたいため、ゲーミフィケーション要素を取り込む
+                                </li>
+                            </ul>
+                        </Typography>
+                },
+                {
+                    label: "実装", content:
+                        <Typography>
+                            GPSを利用し、ユーザーが現地に訪れるとポイントを獲得できる。そのポイントをたまることで、景品に応募することができる。
+                        </Typography>
+                }
+            ]
+
+            return <Columns contents={contents} />
+
+        }
 
         const Tech = () => {
 
             const contents = [
                 {
                     label: "使用技術", content:
-                        <Box>
-                            <Stack spacing={2} direction={"row"}><GithubLogo /><JavaLogo /><SpringbootLogo /><HtmlLogo /><CssLogo /><MysqlLogo />{"Tomcat, Apache"}</Stack>
+                        <Box display="flex" flexWrap={'wrap'}>
+                            <GithubLogo /><JavaLogo /><SpringbootLogo /><HtmlLogo /><CssLogo /><MysqlLogo />{"Tomcat, Apache"}
                         </Box>
                 },
                 { label: "開発期間", content: <>期間 : 半年<br />人数 : 6人</> },
@@ -54,12 +115,13 @@ const SantaQuest = () => {
                 { label: "担当", content: "フロントエンド＆バックエンド" }
             ]
             return (
-                < TechInfo contents={contents} />
+                < Columns contents={contents} />
             )
         }
 
         const contents = [
             { label: "ABSTRACT", content: <Abstract /> },
+            { label: "REQUIREMENT", content: <Requirement /> },
             { label: "TECHS", content: <Tech /> }
         ]
         const Actions = () =>

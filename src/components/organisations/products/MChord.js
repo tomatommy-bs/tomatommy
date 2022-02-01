@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './components/Card';
-import TechInfo from "./components/TechInfo";
+import Columns from "./components/Columns";
 import ProductDiagram from "./components/ProductDiagram";
 import { Button, Tooltip, IconButton, Grid, Typography, Box, Stack } from '@mui/material';
 import { NodeLogo, ReactLogo, MuiLogo, HerokuLogo } from "~/assets/Logo";
@@ -56,14 +56,14 @@ const MChord = () => {
             const contents = [
                 {
                     label: "使用技術", content:
-                        <Box>
-                            <Stack direction="row" spacing={2}><NodeLogo /> <ReactLogo /> <HerokuLogo /><MuiLogo />TonalJS</Stack>
+                        <Box display="flex" flexWrap={'wrap'}>
+                            <NodeLogo /> <ReactLogo /> <HerokuLogo /><MuiLogo />TonalJS
                         </Box>
                 },
                 { label: "開発期間", content: <>期間 : 2か月 ~<br />人数 : 1人</> },
             ]
             return (
-                < TechInfo contents={contents} />
+                < Columns contents={contents} />
             )
         }
 

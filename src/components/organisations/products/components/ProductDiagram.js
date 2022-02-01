@@ -53,7 +53,7 @@ const ProductDiagram = ({ title, contents, actions, onClose, open }) => {
             </DialogTitle>
             <DialogContent dividers >
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange}>
+                    <Tabs value={value} onChange={handleChange} variant={"scrollable"} >
                         {contentKeys.map((key) => <Tab key={key} label={contents[key].label} />)}
                     </Tabs>
                 </Box>
