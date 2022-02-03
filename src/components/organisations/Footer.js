@@ -21,43 +21,9 @@ const Footer = () => {
                 color="primary"
                 sx={{ top: 'auto', bottom: 0, }}
             >
-                <Container maxWidth="xl" sx={{ display: { xs: "none", sm: "block" } }} >
-                    <Toolbar
-                        sx={{ gap: "20px" }}
-                    >
-                        <Typography variant="body1" color="inherit">
-                            created by <Link href={githubHomePage} color={"#FFF"}>とまとみ</Link>
-                        </Typography>
-                        <Stack
-                            direction={"row"}
-                            spacing={"15px"}
-                        >
-                            <Link
-                                href={twitterHomePage}
-                            >
-                                <Twitter sx={{ color: "#DDDDDD" }}></Twitter>
-                            </Link>
-                            <Link
-                                href={githubHomePage}
-                                color={ThemeColor.black}
-                            >
-                                <GitHub sx={{ color: "#DDDDDD" }}></GitHub>
-                            </Link>
-                            <Link
-                                href={qiitaHomePage}
-                                color={ThemeColor.black}
-                            >
-                                <img
-                                    src={qiita}
-                                    width={"24px"}
-                                ></img>
-                            </Link>
-                        </Stack>
-                    </Toolbar>
-                </Container>
                 <SpeedDial
                     ariaLabel="SpeedDial basic example"
-                    sx={{ position: 'absolute', bottom: 16, right: 16, display: { xs: "flex", sm: "none" } }}
+                    sx={{ position: 'absolute', bottom: 16, right: 16 }}
                     icon={<SpeedDialIcon />}
                 >
                     {actions.map((action) => (

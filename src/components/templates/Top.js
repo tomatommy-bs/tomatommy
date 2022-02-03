@@ -132,7 +132,10 @@ const Top = () => {
         )
     }
     const Products = () => {
-        const productKeys = Object.keys(ProductsContents);
+        const SantaQuest = ProductsContents["SantaQuest"];
+        const ReservationScraping = ProductsContents["ReservationScraping"];
+        const Portfolio = ProductsContents["Portfolio"];
+        const MChord = ProductsContents["MChord"];
         return (
             <Container
                 maxWidth={"md"}
@@ -141,14 +144,18 @@ const Top = () => {
                     Products
                 </Heading>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                    {productKeys.map((key) => {
-                        const Content = ProductsContents[key];
-                        return (
-                            <Grid item xs={4} sm={4} md={4} key={key}>
-                                <Content />
-                            </Grid>
-                        )
-                    })}
+                    <Grid item xs={4} sm={4} md={4}>
+                        <SantaQuest />
+                    </Grid>
+                    <Grid item xs={4} sm={4} md={4}>
+                        <ReservationScraping />
+                    </Grid>
+                    <Grid item xs={4} sm={4} md={4}>
+                        <Portfolio />
+                    </Grid>
+                    <Grid item xs={4} sm={4} md={4}>
+                        <MChord />
+                    </Grid>
                 </Grid>
             </Container>
         )
