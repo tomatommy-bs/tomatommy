@@ -1,7 +1,3 @@
-## Welcome to my github page!
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=oura-hideyoshi)](https://github.com/anuraghazra/github-readme-stats)
 
-AtCoder水色目指して頑張りたい
-
-----
-
-どんなことにも、多様な視点による考え方を忘れないようにしたい
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=oura-hideyoshi)](https://github.com/anuraghazra/github-readme-stats)
