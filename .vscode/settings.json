@@ -6,5 +6,6 @@
     "source.fixAll.eslint": true
   },
   "eslint.run": "onSave",
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "cSpell.words": ["tomatommy"]
 }
