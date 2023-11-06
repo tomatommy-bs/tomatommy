@@ -7,5 +7,5 @@
   },
   "eslint.run": "onSave",
   "git.openRepositoryInParentFolders": "always",
-  "cSpell.words": ["tomatommy"]
+  "cSpell.words": ["tailwindcss", "tomatommy"]
 }
