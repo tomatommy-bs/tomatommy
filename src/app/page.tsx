@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import {BASE_PATH_NAME, URL} from '@/const/config';
 import {TbBrandGithub, TbBrandX} from 'react-icons/tb';
+import SNS from '../components/SNS';
+import Skills from '../components/Skills';
 
 export default function Home() {
   return (
@@ -11,15 +13,8 @@ export default function Home() {
         width={200}
         height={200}
       />
-      <p>@tomatommy</p>
-      <div className="flex space-x-4 text-4xl">
-        <a href={URL.github} className="">
-          <TbBrandGithub className="animate-delay-[250ms] animate-fade animate-once" />
-        </a>
-        <a href={URL.twitter} className="">
-          <TbBrandX className="animate-delay-[500ms] animate-fade animate-once" />
-        </a>
-      </div>
+      <SNS />
+      <Skills />
     </main>
   );
 }
