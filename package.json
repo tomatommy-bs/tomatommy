@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
+    "format": "prettier --write src/**/*.ts{,x}",
     "serve": "serve out -l 4000"
   },
   "dependencies": {
