@@ -1,38 +1,36 @@
-### Welcome to my github page!
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-please see [here(Home Page)](https://oura-hideyoshi.github.io/oura-hideyoshi/)
-----
-### PROFILE
+## Getting Started
 
-WebApp開発エンジニアを目指す大学院生. 
-大学の授業でWebAppに触れ,興味をもちプログラマへと足を進める.
+First, run the development server:
 
-趣味は音楽で、現在趣味で「Mchord」の作成中.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-React.jsが難しいので誰か質問させてください...
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-AtCoder水色目指して頑張りたい
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-----
-信念は**視野を広く保つ**こと
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-どんなことにも、多様な視点による考え方を忘れないようにしたい
+## Learn More
 
-### PRODUCTS
+To learn more about Next.js, take a look at the following resources:
 
-- 2Dオートエンコーダの実装
-- 3Dオートエンコーダの実装
-- 教習所予約システムのスクレイピング
-- モイ！SANTA QUEST！
-- Mchord(開発中)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### SKILLS
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-| Lang | Library & Packege | 理解度 | 経験値 | 備考 |
-| --- | --- | --- | --- | --- |
-| C |  | ☆☆ | ☆☆ |
-| Java | SpringBoot + Thymeleaf | ☆☆☆ | ☆☆☆☆ | モイ！SANTA QUEST！|
-| Python3 | Tensorflow,Keras,selenium,openCV,Flask | ☆☆☆ | ☆☆☆ | オートエンコーダの実装(2D・3D),教習所予約システムスクレイピング |
-| JavaScript | | ☆☆☆ | ☆☆☆ | |
-| TypeScript | React.js,Gatsby.js| ☆☆☆ | ☆☆☆ | Mchord |
-| SQL | MySQL,SQlite | ☆☆ | ☆☆☆ | |
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
