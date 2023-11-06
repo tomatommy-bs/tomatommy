@@ -1,0 +1,32 @@
+{
+  "const component": {
+    "scope": "typescriptreact",
+    "prefix": "cc",
+    "body": [
+      "interface Props {",
+      "}",
+      "",
+      "const $TM_FILENAME_BASE:React.FC = () => {",
+      "",
+      "  return (",
+      "    <>",
+      "       $1",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE"
+    ],
+    "description": "Reactコンポーネントのテンプレート"
+  },
+  "createStyle": {
+    "scope": "typescriptreact",
+    "prefix": "crest",
+    "body": ["const useStyles = createStyles(theme => ({$1}))"]
+  },
+  "useStyle": {
+    "scope": "typescriptreact",
+    "prefix": "usest",
+    "body": ["const {classes} = useStyles()"]
+  }
+}
